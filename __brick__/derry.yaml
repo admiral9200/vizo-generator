@@ -1,0 +1,16 @@
+run: flutter run
+runTest: flutter test
+
+mobile:
+  dev:
+    - $run --dart-define=BAGEL_API_KEY=<BAGEL-KEY>
+
+tests:
+  - $runTest --no-pub --coverage --test-randomize-ordering-seed random
+  - flutter pub global run remove_from_coverage:remove_from_coverage -f coverage/lcov.info -r 'main.dart$' -r '_module.dart' -r 'app_router.dart$' -r '.g.dart$' -r 'providers.dart$' -r '_model.dart' -r '_state.dart' -r '_event.dart' -r '_repository.dart'
+  - genhtml coverage/lcov.info -o coverage/html
+  - google-chrome coverage/html/index.html &
+
+format:
+  - flutter format .
+  - flutter pub run import_sorter:main

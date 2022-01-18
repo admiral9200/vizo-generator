@@ -1,0 +1,40 @@
+name: {{#lowerCase}}{{name}}{{/lowerCase}}
+description: {{description}}
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.15.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  bagel_db:
+  equatable:
+  flutter_bloc:
+  get_it:
+  google_fonts:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  bloc_test:
+  mocktail:
+  import_sorter:
+
+  flutter_lints:
+
+scripts: derry.yaml
+
+flutter:
+  uses-material-design: true
+
+import_sorter:
+  emojis: false
+  comments: false

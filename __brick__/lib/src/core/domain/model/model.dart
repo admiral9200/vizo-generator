@@ -1,0 +1,1 @@
+export 'bagel_model.dart';
