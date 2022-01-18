@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.vizo.{{name}}">
+    package="com.vizo.{{appName}}">
    <application
-        android:label="{{name}}"
+        android:label="{{appName}}"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

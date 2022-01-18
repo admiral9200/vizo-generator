@@ -1,4 +1,4 @@
-package com.vizo.{{name}}
+package com.vizo.{{appName}}
 
 import io.flutter.embedding.android.FlutterActivity
 

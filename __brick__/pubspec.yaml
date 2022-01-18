@@ -1,5 +1,5 @@
-name: {{#lowerCase}}{{name}}{{/lowerCase}}
-description: {{description}}
+name: {{#lowerCase}}{{appName}}{{/lowerCase}}
+description: {{appDescription}}
 
 publish_to: "none"
 

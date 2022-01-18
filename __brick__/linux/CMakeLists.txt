@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "{{name}}")
-set(APPLICATION_ID "com.vizo.{{name}}")
+set(BINARY_NAME "{{appName}}")
+set(APPLICATION_ID "com.vizo.{{appName}}")
 
 cmake_policy(SET CMP0063 NEW)
 
