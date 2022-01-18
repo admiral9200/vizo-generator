@@ -2,11 +2,13 @@ name: vizo_app_generator
 description: App generator for Vizo
 version: 1.0.0
 vars:
-  appName:
-    type: string
-    description: Name of the app
-    prompt: What is the name of the App?
-  appDescription:
-    type: string
-    description: Description of the app
-    prompt: Give me a brief description of the App
+  - appName
+  - appDescription
+  #appName:
+  #  type: string
+  #  description: Name of the app
+  #  prompt: What is the name of the App?
+  #appDescription:
+  #  type: string
+  #  description: Description of the app
+  #  prompt: Give me a brief description of the App
