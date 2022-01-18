@@ -1,5 +1,6 @@
 run: flutter run
 runTest: flutter test
+runCodeMetrics: flutter pub run dart_code_metrics:metrics
 
 mobile:
   dev:
@@ -14,3 +15,7 @@ tests:
 format:
   - flutter format .
   - flutter pub run import_sorter:main
+
+metrics:
+  - $runCodeMetrics analyze lib
+  - $runCodeMetrics check-unused-files lib
