@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'app.dart';
 import 'src/core/core.dart';
@@ -10,5 +11,12 @@ Future<void> main() async {
 
   await initDependencies();
 
-  runApp(const App());
+  BlocOverrides.runZoned(
+    () {
+      runApp(
+        const App(),
+      );
+    },
+    blocObserver: CubitObserver(),
+  );
 }
