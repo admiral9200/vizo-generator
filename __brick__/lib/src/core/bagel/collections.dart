@@ -1,2 +1,2 @@
-// Put here your collections names
-// Ex: const USERS_COLLECTION = 'users';
+const LANGUAGES_COLLECTION = 'languages';
+const TRANSLATIONS_COLLECTION = 'translations';

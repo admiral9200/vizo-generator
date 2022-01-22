@@ -36,6 +36,10 @@ scripts: derry.yaml
 flutter:
   uses-material-design: true
 
+  assets:
+    - assets/icons/
+    - assets/images/
+
 import_sorter:
   emojis: false
   comments: false
