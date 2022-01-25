@@ -16,8 +16,7 @@ class {{#pascalCase}}{{appName}}{{/pascalCase}}App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: '{{#pascalCase}}{{appName}}{{/pascalCase}} App',
       theme: AppThemes.kLightThemeData,
-      // REMOVE THIS
-      home: const Scaffold(),
+      initialRoute: LANDING_PAGE,
       onGenerateRoute: AppRouter.generateRoutes,
     );
   }

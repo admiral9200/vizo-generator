@@ -19,6 +19,7 @@ dependencies:
   flutter_bloc:
   get_it:
   google_fonts:
+  shared_preferences:
 
 dev_dependencies:
   flutter_test:

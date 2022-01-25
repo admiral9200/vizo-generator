@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../page/page.dart';
+import '../core.dart';
+
 class AppRouter {
   static Route<dynamic> generateRoutes(RouteSettings settings) {
     // ignore: unused_local_variable
@@ -8,7 +11,11 @@ class AppRouter {
     final routeName = settings.name;
 
     // ignore: prefer_const_constructors
-    late Widget routeWidget = SizedBox();
+    late Widget routeWidget;
+
+    if (routeName == LANDING_PAGE) {
+      routeWidget = const LandingPage();
+    } 
 
     return MaterialPageRoute(
       builder: (_) => routeWidget,

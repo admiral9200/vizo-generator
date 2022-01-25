@@ -1,2 +1,3 @@
-// Put here your route names
-// Ex: const HOME_PAGE = '/';
+const LANDING_PAGE = '/';
+const HOME_PAGE = '/HomePage';
+const SIGN_IN_PAGE = '/SignInPage';
