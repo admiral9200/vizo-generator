@@ -13,6 +13,8 @@ bricks:
     path: bricks/url_launcher
   vizo_app_generator:
     path: bricks/vizo_app_generator
+  vizo_folders:
+    path: bricks/vizo_folders
   vizo_text:
     path: bricks/vizo_text
 
