@@ -9,6 +9,8 @@ bricks:
     path: bricks/bagel
   bagel_collection_example:
     path: bricks/bagel_collection_example
+  get_it:
+    path: bricks/get_it
   linter_rules:
     path: bricks/linter_rules
 
