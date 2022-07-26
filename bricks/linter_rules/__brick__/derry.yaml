@@ -1,0 +1,15 @@
+build: flutter build
+run: flutter run
+runTest: flutter test
+runCodeMetrics: flutter pub run dart_code_metrics:metrics
+
+mobx:
+  - flutter pub run build_runner build --delete-conflicting-outputs
+
+format:
+  - flutter format .
+  - flutter pub run import_sorter:main
+
+metrics:
+  - $runCodeMetrics analyze lib
+  - $runCodeMetrics check-unused-files lib
