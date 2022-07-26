@@ -3,6 +3,8 @@
 bricks:
   vizo_app_generator:
     path: bricks/vizo_app_generator
+  vizo_text:
+    path: bricks/vizo_text
   # Sample Brick
   # Run `mason make hello` to try it out.
   hello: 0.1.0+1
