@@ -1,7 +1,8 @@
 # Register bricks which can be consumed via the Mason CLI.
 # https://github.com/felangel/mason
 bricks:
-  # vizo_app_generator: 1.0.0
+  vizo_app_generator:
+    path: bricks/vizo_app_generator
   # Sample Brick
   # Run `mason make hello` to try it out.
   hello: 0.1.0+1
