@@ -5,12 +5,11 @@ bricks:
     path: bricks/vizo_app_generator
   vizo_text:
     path: bricks/vizo_text
-  # Sample Brick
+  bagel:
+    path: bricks/bagel
+
   # Run `mason make hello` to try it out.
   hello: 0.1.0+1
-  # Bricks can also be imported via git url.
-  # Uncomment the following lines to import
-  # a brick from a remote git url.
   # widget:
   #   git:
   #     url: https://github.com/felangel/mason.git
