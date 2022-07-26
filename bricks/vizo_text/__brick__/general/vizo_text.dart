@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../infra/locator/locator.dart';
-import '../../infra/stores/global_translations_store.dart';
-
 const forcedTextDirection = TextDirection.ltr;
 
 bool isRtl(BuildContext context) {
