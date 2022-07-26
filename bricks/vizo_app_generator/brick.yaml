@@ -1,6 +1,7 @@
 name: vizo_app_generator
 description: App generator for Vizo
 version: 1.0.0
+
 vars:
   appName:
     type: string
