@@ -3,11 +3,11 @@
 A project with many code templates used in Vizo.dev.
 
 ## Installing Mason (first time)
-🎯 Activate from https://pub.dev/packages/mason_cli
+🎯 Activate from https://pub.dev/packages/mason_cli <br />
 ```dart pub global activate mason_cli```
 
 ## Getting Started (using templates)
-```mason make```
+```mason make``` <br />
 (will list all templates added to your global list)
 
 ```mason make hello```
@@ -16,7 +16,7 @@ A project with many code templates used in Vizo.dev.
 
 ```mason make weather -c .\bricks\weather\config.json -o .generated\weather```
 
-##Add/Install new templates
+## Add/Install new templates
 ```mason new NAME``` <br />
 (create new template)
 
@@ -24,8 +24,8 @@ A project with many code templates used in Vizo.dev.
 (after template is setup, add it to your global templates list) <br />
 (so you can you this template outside the current folder/repository)
 
-Usage:
 ```
+Usage:
 mason add [arguments]
 -h, --help       Print this usage information.
 -g, --global     Adds the brick globally.
@@ -35,7 +35,7 @@ mason add [arguments]
 --path           Local path of the brick
 ```
 
-##Advanced features
+## Advanced features
 ```mason install --source git https://github.com/fellangel/mason --path bricks/greeting```
 
 ```mason install --source path .\bricks\weather```
