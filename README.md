@@ -1,14 +1,19 @@
 # vizo_app_generator
 
-A project with many code templates used in Vizo.dev.
+A project with many code templates used at Vizo.dev.
 
 ## Installing Mason (first time)
 🎯 Activate from https://pub.dev/packages/mason_cli <br />
 ```dart pub global activate mason_cli```
 
 ## Getting Started (using templates)
+On this repository terminal: <br />
+```mason get``` <br />
+(will list all templates added to this repository)
+
 ```mason make``` <br />
-(will list all templates added to your global list)
+(will list all templates added to your global list) <br />
+
 
 (Example: template called 'hello') <br />
 ```mason make hello```
