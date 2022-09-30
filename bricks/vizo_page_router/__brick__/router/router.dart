@@ -58,10 +58,7 @@ class AppRouter {
     Routes.home.name: (context) {
       try{
         final args = ModalRoute.of(context)?.settings.arguments;
-        return BlocProvider<HomeCubit>(
-          create: (context) => HomeCubit(),
-          child: const HomePage(),
-        );
+        return const Scaffold(); //HomePage
       } catch (e, s) {
         log('${Routes.error}', error: e, stackTrace: s);
         // _crashlytics.recordError(e, s);
