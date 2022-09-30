@@ -4,19 +4,17 @@ import 'package:get_it/get_it.dart';
 import '../repositories/repositories.dart';
 import '../services/services.dart';
 
-GetIt get getIt => G;
-@protected
-GetIt G = GetIt.instance;
+GetIt get getIt => _g;
+GetIt _g = GetIt.instance;
 
 class Locator {
   /// Note: remember to call 'await [initDependencies]' in [main.dart]
   Future<void> initDependencies() async {
     await createServices();
 
-    createGlobalDependencies();
+    repositoriesAndFactories();
   }
 
-  @protected
   @visibleForTesting
   Future<void> initDB() async {
     // getIt.registerSingleton<BagelDB>(
@@ -24,21 +22,22 @@ class Locator {
     // );
     // getIt.registerSingleton<BagelUsersRequest>(
     //     getIt<BagelDB>().bagelUsersRequest);
-    // await Future.delayed(const Duration(milliseconds: 600));
+    // OR
+    // getIt.registerSingleton<FirebaseAuth>(FirebaseAuth.instance);
+    // getIt.registerSingleton<FirebaseCrashlytics>(FirebaseCrashlytics.instance);
+    // getIt.registerSingleton<FirebaseFirestore>(FirebaseFirestore.instance);
+    // getIt.registerSingleton<FirebaseStorage>(FirebaseStorage.instance);
+    // await Future.delayed(const Duration(milliseconds: 400));
   }
 
-  @protected
   @visibleForTesting
   Future<void> createServices() async {
     await initDB();
 
     // final sharedPrefs = await SharedPreferences.getInstance();
     // getIt.registerSingleton<LocalStorage>(LocalStorageSharedPrefs(sharedPrefs));
-
-    ///
   }
 
-  @protected
   @visibleForTesting
-  void createGlobalDependencies() {}
+  void repositoriesAndFactories() {}
 }
