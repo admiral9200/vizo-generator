@@ -15,6 +15,8 @@ bricks:
     path: bricks/vizo_app_generator
   vizo_folders:
     path: bricks/vizo_folders
+  vizo_page_router:
+    path: bricks/vizo_page_router
   vizo_text:
     path: bricks/vizo_text
 
