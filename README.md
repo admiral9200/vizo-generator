@@ -10,13 +10,14 @@ A project with many code templates used in Vizo.dev.
 ```mason make``` <br />
 (will list all templates added to your global list)
 
+(Example: template called 'hello') <br />
 ```mason make hello```
 
 ```mason make hello -o .\generated\hello```
 
 ```mason make weather -c .\bricks\weather\config.json -o .generated\weather```
 
-## Add/Install new templates
+## Create/Add
 ```mason new NAME``` <br />
 (create new template)
 
@@ -35,7 +36,7 @@ mason add [arguments]
 --path           Local path of the brick
 ```
 
-## Advanced features
+## Advanced features (install templates)
 ```mason install --source git https://github.com/fellangel/mason --path bricks/greeting```
 
 ```mason install --source path .\bricks\weather```
